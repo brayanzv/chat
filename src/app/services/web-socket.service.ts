@@ -8,7 +8,7 @@ export class WebSocketService {
   private socket$!: WebSocketSubject<any>;
 
   constructor() {
-    this.socket$ = webSocket('ws://chat-service-31sz.onrender.com/ws');
+    this.socket$ = webSocket('wss://chat-service-31sz.onrender.com/ws');
   }
 
   connect() {
