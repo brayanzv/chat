@@ -1,0 +1,16 @@
+<h1>Chat App</h1>
+<div>
+  <label for="username">Username:</label>
+  <input type="text" id="username" [(ngModel)]="username" />
+</div>
+<div>
+  <label for="message">Message:</label>
+  <input type="text" id="message" [(ngModel)]="newMessage" />
+  <button (click)="sendMessage()">Send</button>
+</div>
+<hr />
+<ul>
+  <li *ngFor="let message of messages">
+    {{ message.username }}: {{ message.content }}
+  </li>
+</ul>
